@@ -91,21 +91,12 @@
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- Byte Buddy for JDK 24 Mockito Support -->
-        <dependency>
-            <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy</artifactId>
-            <version>1.17.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy-agent</artifactId>
-            <version>1.17.2</version>
-            <scope>test</scope>
-        </dependency>
-
+        <!-- Byte Buddy - required by Hibernate at runtime -->
+<dependency>
+    <groupId>net.bytebuddy</groupId>
+    <artifactId>byte-buddy</artifactId>
+    <version>1.14.14</version>
+</dependency>
     </dependencies>
 
     <build>
