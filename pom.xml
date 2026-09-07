@@ -85,11 +85,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- H2 Database for Tests -->
+        <!-- H2 Database for Local Dev & Testing -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>test</scope>
+            <scope>runtime</scope>
         </dependency>
         <!-- Byte Buddy - required by Hibernate at runtime -->
 <dependency>
